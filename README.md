@@ -1,0 +1,1 @@
+# DotsLand Hyprland Configuration

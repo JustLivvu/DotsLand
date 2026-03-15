@@ -1,0 +1,21 @@
+{
+  "layer": "top",
+  "height": 30,
+
+  "modules-left": ["custom/nixicon", "hyprland/workspaces"],
+  "modules-right": ["clock"],
+  "custom/nixicon": {
+    "format": "󱁏"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "all-outputs": true
+  },
+
+
+  "clock": {
+    "interval": 60,
+    "format": "{:%H:%M}"
+  }
+}

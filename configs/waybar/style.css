@@ -1,0 +1,63 @@
+/* Ogólne ustawienia czcionki i spacing */
+* {
+    font-family: 'Fira Mono', monospace;
+    font-size: 13px;
+    margin: 0;
+    padding: 1px;
+}
+
+/* Główne okno Waybar */
+window#waybar {
+    background: transparent; /* ciemniejszy grafit */
+    color: #e0e0e0;      /* miękka biel */
+    padding: 4px 10px;
+}
+
+/* Ikona Nix */
+#custom-nixicon {
+    font-size: 24px;
+    padding: 0 12px;
+}
+
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 8px;
+    color: #ffffff;
+    margin-right: 2px; 
+    margin-left: 2px;
+    border: none;
+    
+    background: rgb(0, 0, 0);
+    transition: color 0.2s, background 0.2s;
+}
+#workspaces button:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.05);
+}
+#workspaces button.focused {
+    color: #ffffff;
+    background: rgba(127,219,255,0.1);
+}
+
+/* Bateria i zegar */
+#battery,
+#battery#bat1,
+#clock {
+    padding: 0 14px;
+    color: #ffffff;
+}
+
+/* Drobne animacje przy zmianie stanu baterii */
+#battery.percentage-charging {
+    color: #00ff99;
+}
+#battery.percentage-low {
+    color: #ff5555;
+}
+
+/* Minimalistyczny divider */
+.separator {
+    color: #ff0000;
+    padding: 0 6px;
+}
